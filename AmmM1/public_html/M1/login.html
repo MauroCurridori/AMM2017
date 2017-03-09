@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+In tutti i file presenti in questa Milestone, l'uso del tag <br>, di andata a capo, è stato utilizzato solo per scopo visivo 
+personale,che insieme ai commenti intertestuali,contribuiscono alla mia comprensione.
+-->
+<html>
+    <head>
+        <title>Benvenuto su Nerdbook</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Social,Nerdbook,Informatica,Inserisci,Programmazione,Studenti,AMM,Login,Accedi">
+        <meta name="login" content="Nerdbook , il social di AMM">
+        <meta name="author" content="Mauro Curridori">
+    </head>
+    <body>
+        <!--'Strong' viene utilizzato al posto di <b> per il grassetto di frasi
+        inserite in sezioni importanti a livello di impaginazione e per il browser-->
+        <div><h1>Accedi a Nerdbook</h1></div>
+        <nav><a href="descrizione.html" target="blank">Descizione</a>
+             <a href="profilo.html">Profilo</a>
+             <a href="bacheca.html">Bacheca</a></nav>
+        <!--Definizione del form che permette all'utente di inserire dati e di essere 
+        elaborati, di conseguenza, da un'altra pagina(PHP)-->
+        <h3>LOGIN</h3>
+        <div class="input-form">            
+        <!--Definizione del metodo di invio dei dati con 'GET'. Per ora i dati sono 
+        ancora in chiaro nell'URL. Con il metodo POST non accedeva alla pagina destinazione
+        -->
+            <form method="get" action="bacheca.html" >
+                <label for="usrname">Username:</label>
+                <!--Casella di inserimento della stringa in chiaro-->
+                <input name="usrname" id="usrname" type="text"/><br><br>
+                <label for="pswd">Password:</label>
+                <!--Casella di inserimento della stringa oscurata(pallini)-->
+                <input name="pswd" id="pswd" type="password"/>
+                <!--Input delle info del form tramite tasto semplice(senza immagini)
+                con etichetta definita dall'autore(value='Accedi')-->
+                <input type="submit" value="Accedi" />
+            </form>
+        </div>
+    </body>
+</html>
