@@ -1,11 +1,7 @@
 <!DOCTYPE html>
-<!--
-In tutti i file presenti in questa Milestone, l'uso del tag <br>, di andata a capo, è stato utilizzato solo per scopo visivo 
-personale,che insieme ai commenti intertestuali,contribuiscono alla mia comprensione.
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Nerdbook:Social di cultura NERD</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Social,Nerdbook,Informatica,User,informazioni,Nome,Cognome,Email,Password,Frase,Data di nascita,Programmazione,Studenti,AMM,Profilo,Utente">
@@ -14,34 +10,62 @@ personale,che insieme ai commenti intertestuali,contribuiscono alla mia comprens
         
     </head>
     <body>
-        <div><h1>Nerdbook</h1></div>
-        <nav><a href="descrizione.html" target="blank">Descrizione</a>
+        <header>
+            <div id="title">
+                <h1>Nerdbook</h1>
+            </div>
+        </header>
+        
+        <nav>
+            <a href="descrizione.html" target="blank">Descrizione</a>
             <a href="login.html">Login</a>
         </nav>
-            
+        
+        <div id="usrinfo">
         <h3>Raccontaci qualcosa di te!</h3>
-        <div class="input-form">
-            <form method="get" action="profilo.html">
-                <label for="nome">Nome</label>
-                <input name="nome" id="nome" type="text"><br><br>
-                <label for="cognome">Cognome</label>
-                <input name="cognome" id="cognome" type="text"><br><br>
-                <label for="nato">Data di nascita</label>
-                <!--Casella per l'inserimento interattivo della data-->
-                <input name="nato" id="nato" type="date"><br><br>
-                <label for="usrimg">Digita URL per un immagine di profilo</label>
-                <!--Casella per l'inserimento di un URL-->
-                <input name="usrimg" id="usrimg" type="url"><br><br>
-                <label for="frase">Una frase che ti descrive</label><br>
-                <!--Casella per l'inserimento di un testo lungo, dove ne viene visuualizzato  solo i primi rows*cols caratteri
-                    Dopo di che si inserisce in automatico una barra verticale di scorrimento-->
-                <textarea rows="4" cols="40" name="frase" id="frase">
-                </textarea><br><br>
-                <label for="password">Inserisci la password</label>
-                <input name="password" id="password" type="password"><br><br>
-                <label for="password2">Reinserisci la password</label>
-                <input name="password2" id="password2" type="password">          
-            </form>
+            <div id="input-form">
+                <form method="get" action="profilo.html">
+                    <div id="usrnome">
+                        <h4><label for="nome">Nome</label></h4>
+                        <input name="nome" id="nome" type="text">
+                    </div>
+                    
+                    <div id="usrcognome">
+                        <h4><label for="cognome">Cognome</label></h4>
+                        <input name="cognome" id="cognome" type="text">
+                    </div>
+                    
+                    <div id="usrdata">
+                        <h4><label for="nato">Data di nascita</label></h4>
+                        <!--Casella per l'inserimento interattivo della data-->
+                        <input name="nato" id="nato" type="date">
+                    </div>
+                    
+                    <div id="usrimgurl">
+                        <h4><label for="usrimg">Digita URL per un immagine di profilo</label></h4>
+                    <!--Casella per l'inserimento di un URL-->
+                        <input name="usrimg" id="usrimg" type="url">
+                    </div>
+                    
+                    <div id="usrphrase">
+                        <h4><label for="frase">Una frase che ti descrive</label></h4>
+                        <!--Casella per l'inserimento di un testo lungo, dove ne viene visuualizzato  solo i primi rows*cols caratteri
+                            Dopo di che si inserisce in automatico una barra verticale di scorrimento-->
+                        <textarea rows="4" cols="40" name="frase" id="frase"></textarea>  
+                    </div>
+                    
+                    <div id="passusr1">
+                        <h4><label for="password">Inserisci la password</label></h4>
+                        <input name="password" id="password" type="password">
+                    </div>
+                    
+                    <div id="passusr2">
+                        <h4><label for="password2">Reinserisci la password</label></h4>
+                        <input name="password2" id="password2" type="password">
+                    </div>
+                    
+                </form>
+            </div>
         </div>
     </body>
 </html>
