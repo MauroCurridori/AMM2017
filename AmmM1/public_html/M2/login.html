@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nerdbook:Social di cultura NERD</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Social,Nerdbook,Informatica,Inserisci,Programmazione,Studenti,AMM,Login,Accedi">
+        <meta name="login" content="Nerdbook , il social di AMM">
+        <meta name="author" content="Mauro Curridori">
+        <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    </head>
+    <body>
+        
+        <header>
+            <div id="title" >
+                <h1>Accedi a Nerdbook</h1>
+            </div>
+        </header>
+        
+        <nav>
+             <a href="descrizione.html" target="blank">Descizione</a>
+             <a href="profilo.html">Profilo</a>
+             <a href="bacheca.html">Bacheca</a>
+        </nav>
+        <!--Definizione del form che permette all'utente di inserire dati e di essere 
+        elaborati, di conseguenza, da un'altra pagina(PHP)-->
+        <div id="insert">
+            <h3>LOGIN</h3>
+                <div class="input-form">            
+                <!--Definizione del metodo di invio dei dati con 'GET'. Per ora i dati sono 
+                ancora in chiaro nell'URL. Con il metodo POST non accedeva alla pagina destinazione
+                -->
+                    <form method="get" action="bacheca.html" >
+                        <div id="usr">
+                            <label for="usrname">Username:</label>
+                            <!--Casella di inserimento della stringa in chiaro-->
+                            <input name="usrname" id="usrname" type="text"/>
+                        </div>
+
+                        <div id="pass">
+                            <label for="pswd">Password:</label>
+                            <!--Casella di inserimento della stringa oscurata(pallini)-->
+                            <input name="pswd" id="pswd" type="password"/>
+                            <!--Input delle info del form tramite tasto semplice(senza immagini)
+                            con etichetta definita dall'autore(value='Accedi')-->
+                        </div>
+
+                        <div id="button">
+                        <input type="submit" value="Accedi" />
+                        </div>
+
+                    </form>
+                </div>
+        </div>
+    </body>
+</html>

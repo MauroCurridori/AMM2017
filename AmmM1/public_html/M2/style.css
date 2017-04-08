@@ -1,0 +1,132 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28-mar-2017, 9.57.00
+    Author     : Mauro Curridori 47466
+*/
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+    font: 17px " Open Sans", Arial, sans-serif;   
+}
+
+.intro{
+    border-style: solid;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-style: none;
+    border-color: #cc99ff;
+    background-color: rgb(148, 104, 167);
+    width: 99%;
+    height: 20%;
+    position: fixed;
+    padding: 0px 30px 0px 30px;
+    margin-bottom: 3px;
+}
+
+.intro_title{
+    font: 50px "Arial Black", Gadget, sans-serif;
+    font-weight: bold;
+    color: #0E0EC3;
+    position: relative;
+}
+
+div.intro_logo{
+    float: left;
+    border: 17px;
+    border-style: solid;
+    border-radius: 10%;
+    padding: inherit;
+    width: 16%;
+    height: 80%;
+     
+}
+
+.intro_nav_bar{
+    width: 64%;
+    height: 95%;
+    padding-top: 0.1%;
+    float: left;
+    border-radius: 30px;
+    
+}
+
+.nav_link{
+   
+    background-color: hsla(282, 100%, 98%, 0.22);
+    border-radius: 10px 148px;
+    
+}
+
+
+.nav_link_ul {
+    list-style-type: none;
+    margin: 7px;
+    padding: 6.3%;
+    width: 50%;
+    background-color: hsla(282, 53%, 98%, 0);
+}
+
+li {
+    float: left;
+    width: 40%;
+    border: 0.1em;
+    border-style: outset;
+    border-radius: 30px 30px;
+    border-color: blueviolet;
+      
+}
+
+li a {
+    display: block;
+    color: #111;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+li a:hover {
+    font-size:180%;
+    color: gainsboro;
+}
+
+
+.intro_user{
+    width: 17%;
+    height: 100%;
+    float: right;
+    padding-top: 1%;
+}
+
+.intro_user p{
+    height: 17%;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.intro_user img{
+    width: 36%;
+    display: block;
+    margin: auto;
+}
+
+
+
+#central_body{
+    padding-top: 15%;
+    background-image:url("background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
