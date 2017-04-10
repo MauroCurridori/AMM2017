@@ -13,8 +13,7 @@ and open the template in the editor.
     
 }
 body{
-    background-color: whitesmoke;
-    font: 17px " Open Sans", Arial, sans-serif;   
+    background-color: whitesmoke;  
 }
 
 .intro{
@@ -24,7 +23,7 @@ body{
     border-top-style: none;
     border-color: #cc99ff;
     background-color: rgb(148, 104, 167);
-    width: 79em;
+    width: 83em;
     height: 10em;
     position: fixed;
     padding: 0px 30px 0px 30px;
@@ -117,7 +116,7 @@ li a:hover {
 .intro_user p{
     height: 17%;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -128,8 +127,44 @@ li a:hover {
     margin: auto;
 }
 
+/*Div centrali*/
 
 .central_body{
-    padding-top: 15%;
-    padding-left: 30%;
+    font: 17px " Open Sans", Arial, sans-serif;
+    padding-top: 11.3em;
+    padding-left: 15em;
+}
+
+#post1{
+        border: solid;
+}
+#post2{
+        border: solid;
+}
+#post3{
+        border: solid;
+}
+
+.left_nav{
+    height: 37em;
+    width: 15em;
+    float: left;
+    border: solid;
+    margin-top: 12em;
+}
+
+.footer{
+    border-style: solid;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-style: none;
+    border-color: #cc99ff;
+    background-color: rgb(148, 104, 167);
+    width: 83em;
+    height: 5em;
+    position: inherit;
+    padding: 0px 30px 0px 30px;
+    margin-bottom: 3px;
+    top: 0px;
+    text-align: center;
 }
