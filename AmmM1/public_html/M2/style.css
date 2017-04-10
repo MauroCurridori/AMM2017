@@ -10,6 +10,7 @@ and open the template in the editor.
 
 *{
     box-sizing: border-box;
+    
 }
 body{
     background-color: whitesmoke;
@@ -23,18 +24,21 @@ body{
     border-top-style: none;
     border-color: #cc99ff;
     background-color: rgb(148, 104, 167);
-    width: 99%;
-    height: 20%;
+    width: 79em;
+    height: 10em;
     position: fixed;
     padding: 0px 30px 0px 30px;
     margin-bottom: 3px;
+    top: 0px;
 }
-
 .intro_title{
-    font: 50px "Arial Black", Gadget, sans-serif;
+    margin-top: 1.2em;
+}
+h1{
+    font: 2em "Arial Black", Gadget, sans-serif;
     font-weight: bold;
     color: #0E0EC3;
-    position: relative;
+    
 }
 
 div.intro_logo{
@@ -43,34 +47,38 @@ div.intro_logo{
     border-style: solid;
     border-radius: 10%;
     padding: inherit;
-    width: 16%;
-    height: 80%;
+    width: 276px;
+    height: 94%;
      
 }
 
 .intro_nav_bar{
-    width: 64%;
-    height: 95%;
-    padding-top: 0.1%;
+    width: 45em;
+    height: 8em;
+    margin-top: 0em;
+    padding-top: 1em;
     float: left;
     border-radius: 30px;
-    
 }
 
 .nav_link{
    
     background-color: hsla(282, 100%, 98%, 0.22);
     border-radius: 10px 148px;
+    border: solid;
+    padding-top: 3em;
+    height: 8em;
     
 }
 
 
 .nav_link_ul {
-    list-style-type: none;
-    margin: 7px;
-    padding: 6.3%;
-    width: 50%;
+        list-style-type: none;
+    padding: 8px;
+    width: 28em;
     background-color: hsla(282, 53%, 98%, 0);
+    margin-left: 6em;
+    height: 90px;
 }
 
 li {
@@ -80,6 +88,7 @@ li {
     border-style: outset;
     border-radius: 30px 30px;
     border-color: blueviolet;
+    margin-right: 2em;
       
 }
 
@@ -89,7 +98,7 @@ li a {
     text-align: center;
     padding: 8px 16px;
     text-decoration: none;
-    font-size: 1.7em;
+    font-size: 1.2em;
     font-weight: 600;
 }
 
@@ -100,10 +109,9 @@ li a:hover {
 
 
 .intro_user{
-    width: 17%;
-    height: 100%;
+    width: 12em;
+    height: 10em;
     float: right;
-    padding-top: 1%;
 }
 
 .intro_user p{
@@ -121,12 +129,7 @@ li a:hover {
 }
 
 
-
-#central_body{
+.central_body{
     padding-top: 15%;
-    background-image:url("background.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
+    padding-left: 30%;
 }
