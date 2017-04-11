@@ -161,7 +161,8 @@ li a:hover {
     border-style: inset;
     border-radius: 5%;
     border-color: black;
-    background: #cc99ff; 
+    background: #cc99ff;
+    text-align: center;
 }
 
 .post_prof{
@@ -232,4 +233,6 @@ li a:hover {
     text-align: center;
     font-style: oblique;
 }
+/*Profilo.html*/
+
 

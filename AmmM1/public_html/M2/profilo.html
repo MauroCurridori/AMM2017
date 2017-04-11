@@ -10,22 +10,39 @@
         <link rel="stylesheet" href="style.css" type="text/css" media="all" />
     </head>
     <body>
-        <header>
-            <div id="title">
-                <h1>Nerdbook</h1>
+        <header class="intro">
+            <div class="intro_logo"><h1 class="intro_title">NerdBook</h1></div>
+
+            <div class="intro_nav_bar">
+                <nav class="nav_link">
+                    <ul class="nav_link_ul">
+                        <li> <a href="descrizione.html" target="blank">Descrizione</a></li>
+                        <li> <a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="intro_user">
+                <p>Profilo <br><u><a href="login.html" target="blank">Logout</a></u></p> 
+                <img title="dv" alt="img_dv" src="images.png">
             </div>
         </header>
         
-        <nav>
-            <a href="descrizione.html" target="blank">Descrizione</a>
-            <a href="login.html">Login</a>
-        </nav>
+        <div class="left_nav">
+            <h2 class='left_nav_item'>Amicizie:</h2><br>
+            <h3>Giollone</h3><br>
+            <h3>Nvidio</h3><br>
+            <h3>NationalGeoNerding</h3><br><br>
+            <h2 class='left_nav_item'>Gruppi:</h2><br>
+            <h3>I 10 Comandamenti di Tesla</h3><br>
+            <h3>Tom's HW & Jerry's SW</h3><br>
+        </div>
         
-        <div id="usrinfo">
-        <h3>Raccontaci qualcosa di te!</h3>
-            <div id="input-form">
+        
+        <div class="central_body">
+            <div class="post">
+                <h2 class="left_nav_item">Raccontaci qualcosa di te!</h2>
                 <form method="get" action="profilo.html">
-                    <div id="usrnome">
+                    <div class="">
                         <h4><label for="nome">Nome</label></h4>
                         <input name="nome" id="nome" type="text">
                     </div>
