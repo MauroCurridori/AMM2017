@@ -1,0 +1,17 @@
+<!--  <div class="post">
+               <c:forEach var="post" items="${post}">
+                <div class="post_prof">
+                    <h2>${utente.username}</h2>
+                    <img title="profilo1" alt="nerd1" src="${utente.urlfoto}">
+                </div>
+                <div class="post_cont">
+                    <c:if test="${post.tipo_all == 1}">
+                        <img title="imgpost" alt="imgpost" src="${post.cont_all}" >
+                    </c:if>
+                    <c:if test="${post.tipo_all == 2}">
+                        <strong><a href="${post.cont_all}" target='blank'></a></strong>
+                    </c:if>
+                <p>${post.cont_testo}</p>
+                </div>
+                </c:forEach> 
+            </div> -->

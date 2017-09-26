@@ -1,0 +1,403 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28-mar-2017, 9.57.00
+    Author     : Mauro Curridori 47466
+*/
+
+*{
+    box-sizing: border-box;   
+}
+html{
+    background-repeat: repeat;
+    background-position: center;
+    background-color:rgba(19, 100, 154, 0.16);
+    
+}
+
+.intro{
+    border-style: solid;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-style: none;
+    border-color: #cc99ff;
+    background-color: rgb(148, 104, 167);
+    width: 83em;
+    height: 10em;
+    position: fixed;
+    padding: 0px 30px 0px 30px;
+    margin-bottom: 3px;
+    top: 0px;
+}
+.intro_title{
+    margin-top: 1.2em;
+}
+h1{
+    font: 2em "Arial Black", Gadget, sans-serif;
+    font-weight: bold;
+    color: #0E0EC3;  
+}
+
+h2{
+    font: 1.2em "Arial Black", Gadget, sans-serif;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h3{
+    font: 0.8em "Arial Black", Gadget, sans-serif;
+    margin-bottom: 0px;
+    margin-top: 0.5em;
+}
+
+p{
+    font: 'Francois One',sans-serif;
+}
+
+ul{
+    height: 6em;
+}
+    
+
+div.intro_logo{
+    float: left;
+    border: 17px;
+    border-style: solid;
+    border-radius: 10%;
+    padding: inherit;
+    width: 276px;
+    height: 94%;
+     
+}
+
+.intro_nav_bar{
+    width: 45em;
+    height: 8em;
+    margin-top: 0em;
+    padding-top: 1em;
+    float: left;
+    border-radius: 30px;
+}
+
+.nav_link{
+   
+    background-color: hsla(282, 100%, 98%, 0.22);
+    border-radius: 10px 148px;
+    border: solid;
+    height: 8em;
+    
+}
+
+
+.nav_link_ul {
+        list-style-type: none;
+    padding: 12px;
+    width: 28em;
+    background-color: hsla(282, 53%, 98%, 0);
+    margin-left: 6em;
+    height: 90px;
+}
+
+li {
+    float: left;
+    width: 40%;
+    border: 0.1em;
+    border-style: outset;
+    border-radius: 30px 30px;
+    border-color: blueviolet;
+    margin-right: 2em;
+      
+}
+
+li a {
+    display: block;
+    color: #111;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+li a:hover {
+    font-size:1.22em;
+    color: blueviolet;
+}
+
+
+.intro_user{
+    width: 12em;
+    height: 10em;
+    float: right;
+}
+
+.intro_user p{
+    height: 17%;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.intro_user img{
+    width: 36%;
+    display: block;
+    margin: auto;
+}
+
+/*Div centrali*/
+
+.central_body{
+    font: 17px " Open Sans", Arial, sans-serif;
+    width: fit-content;
+    padding-top: 11.3em;
+    padding-left: 15%;
+    margin-left: 14em;
+    margin-right:1em ;
+    
+    
+}
+/* Definizione della struttura centrale della bacheca*/
+.post{
+    border:4px;
+    border-style: inset;
+    border-radius: 5%;
+    border-color: black;
+    background: #cc99ff;
+    text-align: center;
+}
+
+.nuovopost{
+    border:4px;
+    border-style: inset;
+    border-radius: 5%;
+    border-color: black;
+    background: #cc99ff;
+    text-align: center;
+    width: 33em;
+    
+}
+
+.post_prof{
+    border-style: solid;
+    border-radius: 1%;
+    background-color:lavenderblush;
+    width: 9em;
+    height: 9em;
+    margin: 0.5em;
+    margin-right: 0em;
+    text-align: center;
+}
+
+.post_prof img{
+    height: 90px;
+    width: 90px
+}
+
+
+
+.post_cont{
+    border: solid;
+    max-width: 40em;
+    max-height: 20em;
+    margin-left: 13em;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    padding-left: 2em;
+    padding-top: 0.5em;
+    border-radius: 10%;
+    border-color: lightslategray;
+    background-color: lavenderblush;
+}
+
+
+.post_cont_new{
+    border: solid;
+    max-width: 40em;
+    max-height: 20em;
+    margin-left: 1px;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    padding-left: 2em;
+    padding-top: 0.5em;
+    border-radius: 10%;
+    border-color: lightslategray;
+    background-color: lavenderblush;
+    text-align: center;
+}
+
+.input_url_post{
+    border: solid;
+    margin-left: 1px;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    padding-left: 2em;
+    padding-top: 0.5em;
+    border-radius: 10%;
+    border-color: lightslategray;
+    background-color: lavenderblush;
+    height: 45px;
+   
+}
+
+
+
+.left_nav{
+    height: 37em;
+    width: 15em;
+    float: left;
+    background-color: rgb(148, 104, 167);
+    border-style: outset;
+    border-color: #cc99ff;
+    margin-top: 12em;
+    margin-right:inherit;
+    border-radius: 10%;
+    text-align: center;  
+}
+
+.left_nav_item{
+    color: #0E0EC3;
+}
+
+.left_nav_prof a{
+    color: black;
+    font-weight: bold;
+}
+
+.footer{
+    border-style: solid;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-style: none;
+    border-color: #cc99ff;
+    background-color: rgb(148, 104, 167);
+    width: 83em;
+    height: 5em;
+    position: inherit;
+    padding: 0px 30px 0px 30px;
+    margin-bottom: 3px;
+    margin-top: 2em;
+    top: 0px;
+    text-align: center;
+    font-style: oblique;
+}
+/*Profilo.html*/
+
+form.formpro{
+    height: 35em;
+    width: min-content;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20%;        
+}
+
+#usrnome,#usrcognome,#usremail,#usrimgurl,#usrdata,#passusr1,#passusr2{
+    float: left;
+    width: fit-content;
+    height: 3em;
+   
+}
+
+
+
+#prof_text{
+        float: left;
+}
+
+#prof_in{
+    padding-top: 20px;
+    float:left;
+}
+#usrphrase{
+    float: left;
+    width: max-content;
+    height: 3em;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+#pwdform{
+   float: left;
+    width: 100%;
+    height: 6em;
+    margin-bottom: 5%; 
+}
+
+
+#prof_text_phrase{
+    float: left;
+}
+#prof_in_phrase{
+    float: left;
+}
+
+button{
+    border-radius: 10px 148px;
+    font-size: 1.3em;
+    font-weight: bold; 
+}
+
+#formbutton{
+    float: left;
+    padding-left: 7em;
+    padding-top: 4em;
+}
+
+/*LOGIN*/
+
+#login_title,#login_nav,#login_insert{
+    text-align: center;
+}
+
+#login_insert{
+    background-color: #cc99ff;
+    text-align: center;
+    padding: 1em;
+    width: 17em;
+    margin-top: 13em;
+    margin-left: 30em;
+    border-style: groove;  
+    border:4px;
+    border-style: inset;
+    border-radius: 5%;
+    border-color: black;    
+}
+
+#login_input_form,#login_usr,#login_pass,#login_button{
+    margin: 1em;
+}
+
+
+/*Descrizione*/
+
+#sommario{   
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 6em;
+    margin-top: 12em;
+}
+
+/* @media only screen and (min-width:481px) and (max-width: 1024px) {
+    .left_nav {
+        display: none;
+    }
+    div.content {
+        width: 100%;
+        margin-left: 0;
+    }
+    .central_body {
+        width: 1024px;
+    }
+    .inlineblock {
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    div.content#login_content {
+        margin-left: 0;
+    }
+}*/
