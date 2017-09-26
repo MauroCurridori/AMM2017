@@ -288,7 +288,7 @@ li a:hover {
 /*Profilo.html*/
 
 form.formpro{
-    height: 35em;
+    height: 37em;
     width: min-content;
     padding-left: 10%;
     padding-right: 10%;
@@ -343,7 +343,7 @@ button{
 #formbutton{
     float: left;
     padding-left: 7em;
-    padding-top: 4em;
+    padding-top: 2em;
 }
 
 /*LOGIN*/
@@ -380,24 +380,4 @@ button{
     margin-top: 12em;
 }
 
-/* @media only screen and (min-width:481px) and (max-width: 1024px) {
-    .left_nav {
-        display: none;
-    }
-    div.content {
-        width: 100%;
-        margin-left: 0;
-    }
-    .central_body {
-        width: 1024px;
-    }
-    .inlineblock {
-        display:none;
-    }
-}
 
-@media only screen and (min-width: 1024px) {
-    div.content#login_content {
-        margin-left: 0;
-    }
-}*/

@@ -148,7 +148,51 @@ public class PostFactory {
       return null;
     }
     
-    public void addPost(Post post,Utente autore)
+    
+    public Post getPostbyIDBac(int idbac)
+    { 
+      try{
+          Connection conn = DriverManager.getConnection(connectionString, "ammdb", "ammdb");
+          String query = "select * from post where bacheca= ?";
+          PreparedStatement stmt = conn.prepareStatement(query);
+          stmt.setInt(1, idbac);
+          
+          ResultSet res = stmt.executeQuery();
+         
+          
+          if(res.next())
+          {
+               Post current = new Post();
+               //imposto id post
+               current.setId(res.getInt("id_post"));
+               //imposto contenuto del testo
+               current.setContTesto(res.getString("cont_testo"));
+               //impposto il tipo di allegato
+               current.setTipoAll(res.getInt("tipo_all"));
+               //imposto il contenuto dell'allegato (url o foto)
+               current.setContAll(res.getString("cont_all"));
+               //imposto l'autore del post
+               current.setUser(res.getInt("autore"));
+             
+                             
+               
+               stmt.close();
+               conn.close();
+               return current;
+              
+          }
+          stmt.close();
+          conn.close();
+          
+      }
+      catch(SQLException e)
+        {
+            Logger.getLogger(UtenteFactory.class.getName()).log(Level.SEVERE,null, e);
+        }
+      return null;
+    }
+    
+    public void addPost(Post post,Utente autore,int bac)
     {
         try{
             Connection conn = DriverManager.getConnection(connectionString, "ammdb", "ammdb");
@@ -170,7 +214,7 @@ public class PostFactory {
             //Autore
             stmt.setInt(4, autore.getId());
             //Bacheca
-            stmt.setInt(5, post.getIdBach());
+            stmt.setInt(5, bac);
             
             // Esecuzione query
             stmt.executeUpdate();
@@ -218,9 +262,9 @@ public class PostFactory {
                 //imposto il contenuto dell'allegato
                 current.setContAll(res.getString("cont_all"));
                 //imposto l'autore del post
-                current.setUser(res.getInt("autore"));
+                current.setUser(user.getId());
                 //Proprietario bacheca
-                current.setIdBach(res.getInt("bacheca"));
+                current.setIdBach(BachecaFactory.getInstance().getIdByUtente(user));
                 //Aggiungo l'oggetto Post alla lista
                 listaPost.add(current);
                 

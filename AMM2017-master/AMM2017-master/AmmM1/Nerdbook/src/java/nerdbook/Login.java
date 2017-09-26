@@ -77,7 +77,7 @@ public class Login extends HttpServlet {
         if(id_utente != -1 )
         {
             Utente user = UtenteFactory.getInstance().getUtenteById(id_utente);
-            
+           
             boolean fields = us.getEmptyfields(username, password);
             
             session.setAttribute("utente", user);

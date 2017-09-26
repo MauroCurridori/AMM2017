@@ -59,11 +59,12 @@ public class Bacheca extends HttpServlet {
         HttpSession session = request.getSession();
         
         Utente utente = (Utente)session.getAttribute("utente");
-        
+        Bacheca bac = (Bacheca)session.getAttribute("bacheca");
         if (session.getAttribute("Logged") != null &&
             session.getAttribute("Logged").equals(true)) 
         {  
             request.setAttribute("utente",utente);
+            request.setAttribute("bacheca",bac);
                 List<Post> posts = PostFactory.getInstance().getPostList(utente);
                 request.setAttribute("posts", posts);
                 

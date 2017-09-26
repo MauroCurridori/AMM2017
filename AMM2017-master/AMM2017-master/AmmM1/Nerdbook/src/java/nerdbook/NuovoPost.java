@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import nerdbook.modelli.BachecaFactory;
 import nerdbook.modelli.Post;
 import nerdbook.modelli.UtenteFactory;
 import nerdbook.modelli.PostFactory;
@@ -45,14 +46,14 @@ public class NuovoPost extends HttpServlet {
             session.getAttribute("Logged").equals(true)) {
 
             Utente utente = (Utente)session.getAttribute("utente");
-            
+          
                 String conferma = request.getParameter("Conferma");
                  
                 String conttesto = request.getParameter("conttesto");
                 int tipoall = Integer.parseInt(request.getParameter("tipo_all"));
                 String contall = request.getParameter("cont_all");
                 int user = utente.getId();
-                int bach = Integer.parseInt(request.getParameter("bacheca"));
+                int bach = BachecaFactory.getInstance().getIdByUtente(utente);
                 
                 if(conferma.equals("Conferma"))
                 {
@@ -64,7 +65,7 @@ public class NuovoPost extends HttpServlet {
                     post.setUser(user);
                     post.setIdBach(bach);
                                
-                    PostFactory.getInstance().addPost(post,utente);
+                    PostFactory.getInstance().addPost(post,utente,bach);
                     request.getRequestDispatcher("bacheca.jsp").forward(request, response);
                     
                 }
